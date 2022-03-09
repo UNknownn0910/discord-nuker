@@ -86,8 +86,8 @@ async def nuke_guild(guild):
     print(f'{m}Delete Roles:{b}{delete_roles}')
     created_channels = await create_voice_channels(guild,name)
     print(f'{m}Create Voice Channels:{b}{created_channels}')
-    #created_roles = await created_roles(guild,name)
-    #print(f'{m}Create Roles:{b}{created_roles}')
+    created_roles = await create_roles(guild,name)
+    print(f'{m}Create Roles:{b}{created_roles}')
     print(f'{r}--------------------------------------------\n\n')
 
 
