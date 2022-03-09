@@ -11,3 +11,8 @@ How to Start:
 1. Install nuke-bot.py modules (pip install THE_MODULE)
 2. Launch nuke-bot.py file
 3. Follow the instructions
+
+
+Join my discord for more:
+
+https://discord.gg/RdVX95ysyA
